@@ -4,21 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator Persegi</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <header>
+    <!-- NAVIGATION -->
+    <section class="kertas">
+    <div class="judul">
         <h1>Kalkulator Hitung Persegi</h1>
-    </header>
-    <section class="luasInputSection">
-        <label for="inputField">Sisi Persegi</label>
-        <input typr="number" id="inputField" placeholder="Masukkan sisi">
+    </div>
+    <div class="keterangan">
+            <h2 class="haiSemua">Hai Semua!</h2>
+            <h4 class="kalkulatorIni">Kalkulator ini dapat kamu pergunakan untuk menghitung keliling dan Luas Persegi dengan mudah.</h4>
+            <h4 class="semoga">Semoga bermanfaat ya!</h4>
+    </div>
+    <!-- NAVIGATION END -->
 
-    </section>
-    <section class="inputButtonSection">
-        <button>Hitung</button>
-        <button>Reset</button>
-    </section>
+    <!-- MAIN -->
+    <div>
+        <div class="kelilingPersegi">
+            <h2>Keliling Persegi</h2>
+        </div>
+        <div class="gambarPersegi">
+            <img src="persegi1.png" class="imgPersegi">
+        </div>
+        <div class="rumusKeliling">
+            <h4>Rumus Keliling Persegi yaitu:</h4>
+            <h3 class="rumusnya">K = 4 x S</h3>
+            <h4>Dimana:</h4>
+            <h4>K = Keliling</h4>
+            <h4>S = Sisi</h4>
+            <h2 class="hitungKelilingPersegi">Hitung Keliling Persegi</h2>
+        </div>
+        <div class="masukkanAngka">
+            <input type="number" id="nilaiSisi" placeholder="Nilai sisi">
+        </div>
+        <div class="tombol">
+            <button id="hitung">Hitung</button>
+            <button onclick="clearDisplay()">Reset</button>
+        </div>
+        <div>
+            <div id="output"></div>
+        </div>
+        <br>
+        <br>
+        <div class="luasPersegi">
+            <h2>Luas Persegi</h2>
+        </div>
+        <div class="gambarPersegi">
+            <img src="persegi1.png" class="imgPersegi">
+        </div>
+        <div class="rumusLuas">
+            <h4>Rumus Luas Persegi yaitu:</h4>
+            <h3 class="rumusnya">L = S x S</h3>
+            <h4>Dimana:</h4>
+            <h4>L = Luas</h4>
+            <h4>S = Sisi</h4>
+            <h2 class="hitungLuasPersegi">Hitung Luas Persegi</h2>
+        </div>
+        <div class="masukkanAngka">
+            <input type="number" id="angkaSisi" placeholder="Nilai sisi">
+        </div>
+        <div class="tombol">
+            <button id="hitung1">Hitung</button>
+            <button onclick="clearDisplay1()">Reset</button>
+        </div>
+        <div>
+            <div id="output1"></div>
+        </div>
+
+    </div>
+
+    <!-- MAIN END -->
+    <br>
+    <!-- FOOTER -->
+    <div class="penutup">
+        <h5>
+           Web sederhana ini dibuat sebagai tugas Fundamental Course REVOU 
+        </h5>
+
+    </div>
+    <!-- FOOTER END -->
+    <script src="js/index.js"></script>
 </body>
 </html>
-<!--yok bisa yok-->
